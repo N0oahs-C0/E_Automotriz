@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AccesoaDatos
+namespace Manejadores
 {
-    public class Class1
+    public class MProducto
     {
     }
 }

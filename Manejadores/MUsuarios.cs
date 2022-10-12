@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_Automotriz_1
+namespace Manejadores
 {
-    public class Class1
+    class MUsuarios
     {
     }
 }
