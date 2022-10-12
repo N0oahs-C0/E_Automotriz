@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4FABFB2D-BDAC-4088-BDBC-076C6F6C4014}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>E_Automotriz_1</RootNamespace>
     <AssemblyName>E_Automotriz_1</AssemblyName>
@@ -30,9 +30,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,8 +46,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FmrHerramienta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrHerramienta.Designer.cs">
+      <DependentUpon>FmrHerramienta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrInicioS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrInicioS.Designer.cs">
+      <DependentUpon>FmrInicioS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrMenu.Designer.cs">
+      <DependentUpon>FmrMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmrProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmrProductos.Designer.cs">
+      <DependentUpon>FmrProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FmrInicioS.resx">
+      <DependentUpon>FmrInicioS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrMenu.resx">
+      <DependentUpon>FmrMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmrProductos.resx">
+      <DependentUpon>FmrProductos.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoaDatos\AccesoaDatos.csproj">
+      <Project>{56f6eeeb-9b50-4f85-a4c4-2d204e13342b}</Project>
+      <Name>AccesoaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades_E_Automotriz1\Entidades_E_Automotriz1.csproj">
+      <Project>{f70348de-5777-4387-9676-fc9dff486e24}</Project>
+      <Name>Entidades_E_Automotriz1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Manejadores\Manejadores.csproj">
+      <Project>{390c1e28-dfd4-4d73-823a-11ed32dda3fc}</Project>
+      <Name>Manejadores</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

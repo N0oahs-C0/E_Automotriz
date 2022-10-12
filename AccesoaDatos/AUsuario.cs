@@ -31,5 +31,9 @@ namespace AccesoaDatos
         {
             return b.Obtener(string.Format("Select * from Usuarios"), "Usuarios");
         }
+        public DataSet Inicio(string usuario)
+        {
+            return b.Obtener(string.Format("select * from usuarios where nombre = '{0}'", usuario), "usuarios");
+        }
     }
 }

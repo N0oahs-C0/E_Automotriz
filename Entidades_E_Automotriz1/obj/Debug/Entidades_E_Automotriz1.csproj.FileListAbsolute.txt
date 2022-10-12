@@ -1,0 +1,6 @@
+C:\Users\ddr4z\source\repos\E_Automotriz_1\Entidades_E_Automotriz1\bin\Debug\Entidades_E_Automotriz1.dll
+C:\Users\ddr4z\source\repos\E_Automotriz_1\Entidades_E_Automotriz1\bin\Debug\Entidades_E_Automotriz1.pdb
+C:\Users\ddr4z\source\repos\E_Automotriz_1\Entidades_E_Automotriz1\obj\Debug\Entidades_E_Automotriz1.csproj.AssemblyReference.cache
+C:\Users\ddr4z\source\repos\E_Automotriz_1\Entidades_E_Automotriz1\obj\Debug\Entidades_E_Automotriz1.csproj.CoreCompileInputs.cache
+C:\Users\ddr4z\source\repos\E_Automotriz_1\Entidades_E_Automotriz1\obj\Debug\Entidades_E_Automotriz1.dll
+C:\Users\ddr4z\source\repos\E_Automotriz_1\Entidades_E_Automotriz1\obj\Debug\Entidades_E_Automotriz1.pdb
