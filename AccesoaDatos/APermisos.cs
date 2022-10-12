@@ -31,5 +31,8 @@ namespace AccesoaDatos
         {
             return b.Obtener(string.Format("Select * from Permisos where fkidusuario={0}",id), "Permisos");
         }
+
+ 
+    
     }
 }
